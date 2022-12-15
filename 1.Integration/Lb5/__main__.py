@@ -59,20 +59,20 @@ def run_simpson(f_, a_: float, b_: float) -> list:
 if __name__ == '__main__':
     os.system('clear')
 
-    a = f1_interval()[0]
-    b = f1_interval()[1]
+    a = f5_interval()[0]
+    b = f5_interval()[1]
 
-    rectang = run_rect(f1, a, b)
+    rectang = run_rect(f5, a, b)
     print('\t\tRectangular (Middle) Rule\n')
     print(f'Number of splits - {rectang[0]}')
     print(f'Result of method - {rectang[1]}\n')
 
-    trapezoid = run_trapezoid(f1, a, b)
+    trapezoid = run_trapezoid(f5, a, b)
     print('\t\t Trapezoid Rule\n')
     print(f'Number of splits - {trapezoid[0]}')
     print(f'Result of method - {trapezoid[1]}\n')
 
-    simpson = run_simpson(f1, a, b)
+    simpson = run_simpson(f5, a, b)
     print('\t\tSimpson Rule\n')
     print(f'Number of splits - {simpson[0]}')
     print(f'Result of method - {simpson[1]}\n')
